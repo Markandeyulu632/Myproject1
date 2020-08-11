@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<body style="background-color:lightgreen">
+<form style="margin-left:300px;margin-top:100px">
+<input type="hidden" name="uname" value="{{name}}">
+<font size="6" face="Arial" color="black">Hello {{name}}</font>,
+
+     <font size="5" color="black" face="gothlic">
+         <br>
+     welcome to Murugan Yoga Center
+         <br>
+     Thanks to you for showing interest on us.
+         <br>
+     We will keep contact you shortly throuth your communication Channels.
+         <br>
+        <div style="margin-left:200px;margin-top:50px">
+         Thank you.
+             <br>
+          Best Regards
+             <br>
+          Murugan Yoga Crnter
+        </div>
+     </font>
+</form>
+</body>
+{% endblock content %}

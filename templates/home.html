@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+
+    <style>
+		.background-image {
+  			position: fixed;
+  			left: 0;
+  			right: 0;
+  			z-index: 1;
+  			display: block;
+  			background-image: url('static/images/yoga7.jpg');
+  			width: 1600px;
+  			height: 1500px;
+  			background-repeat: no-repeat;
+  			margin-left:250px;
+  			margin-right:200px;
+  			margin-top:50px;
+  			background-size:800px 500px;
+
+	       }
+
+		.content {
+  			position: absolute;
+  			left: 0;
+  			right: 0;
+  			z-index: 9999;
+  			margin-left: 20px;
+  			margin-right: 0px;
+			}
+
+            body {
+              background-color: #333;
+              font-size: 15px;
+            }
+
+            path {
+              fill: transparent;
+            }
+
+            text {
+              fill: darkbrown;
+            }
+	</style>
+
+{% endblock title %}
+
+{% block content %}
+
+<body>
+<a class="background-image" href="{% url 'registerp' %}">
+<div class="content">
+    <svg viewBox="0 0 500 60">
+    <path id="curve" d="M43.2,85.6c4-31.1,35.5-106.8,160.6-35.6c111.3,1.2,170.8,90.3,175.1,97" />
+    <text x="50">
+      <textPath xlink:href="#curve">
+        Murugan yoga Center
+      </textPath>
+    </text>
+  </svg>
+
+      <h2 style="color:blue;margin-left:20px;margin-top:0px">
+       <ul>
+           <li>Kerla traditional yoga</li>
+           <li>Immuity boosting & breathing exercises</li>
+           <li>Back pain related asanas</li>
+           <li>All kind of body ailment related asana</li>
+       </ul>
+
+    </h2>
+    <h1 style="margin-left:150px;margin-top:10px;color:yellow"> Wish to contact then Click on image</h1>
+    <h3 STYLE="margin-left:350px;color:yellow"> OR </h3>
+    <h2 style="margin-left:50px;color:yellow">Reach us on +91-9032078296 or Email: muruganyoga6666@gmail.com </h2>
+</div>
+</a>
+</body>
+
+{% endblock content %}

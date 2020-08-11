@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body style="background-color:lightgrey;">
+
+    <h1 style="color:yellow;background-color:green;;margin-top:50px;margin-left:480px;margin-right:578px;">
+        Murgan yoga center
+    </h1>
+    <form method="POST">
+        <a href="{% url 'register' %}"><img style="width:800px;height:500px;margin-left:250px;margin-top:1px;" src="{% static 'images/yoga7.jpg' %}">
+        </a>
+    </form>
+
+    <h2 style="background-color:green;color:yellow;margin-left:450px;margin-right:450px">
+        Kerla traditional yoga <br>
+        Immuity boosting & breathing exercises <br>
+        Back pain related asanas <br>
+        All kind of body ailment related asana <br>
+    </h2>
+    <h1 style="margin-left:300px;margin-right:250px;background-color:green;color:yellow">
+        Wish to contact, please click on the image for more details
+    </h1>
+</body>
+
+
+
+{% endblock content %}

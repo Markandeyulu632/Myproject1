@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<body style="background-color:lightgrey;background-image: url('static/images/name_2.jpg');">
+    <form style="margin-left:400px;margin-right:500px;margin-top:175px;background-color:lightyellow" method="POST" action="{% url 'welcome' %}">
+            {% csrf_token %}
+        <label for="firstname"><font size="5" face="Castellar">Firstname</font></label>
+        <input style="margin-left:30px" type="text" name="firstname" id="firstname" width="50" height="50">
+         <br><br><br>
+        <label for="lastname"><font size="5" face="Castellar">Lastname</font></label>
+        <input style="margin-left:35px" type="text" name="lastname" id="lastname">
+        <br><br><br>
+        <label for="email"><font size="5" face="Castellar">Email</font></label>
+        <input style="margin-left:95px" type="email" name="email" id="email">
+        <br><br><br>
+        <label for="pnumber"><font size="5" face="Castellar">Ph Number</font></label>
+        <input style="margin-left:20px" type="tel" name="pnumber" id="pnumber">
+        <br><br><br>
+        <input style="margin-left:120px" type="submit">
+    </form>
+</body>
+
+
+{% endblock content %}
